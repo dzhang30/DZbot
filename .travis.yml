@@ -1,0 +1,9 @@
+language: python
+python:
+  - 3.6
+sudo: false
+before_script:
+  - pip install flake8
+  - flake8 .
+install: python setup.py install
+script:  python setup.py test

@@ -1,0 +1,27 @@
+{
+    "name": "DZbot Addon",
+    "description": "DZbot HipChat Addon",
+    "key": "dzbot-hipchat-addon",
+    "links": {
+        "self": "https://my.server.com/my-addon/capabilities.json"
+    },
+    "capabilities": {
+        "hipchatApiConsumer": {
+            "scopes": [
+                "send_notification", "send_message", "view_group", "view_messages","view_room"
+            ]
+        },
+        "installable": {
+            "allowGlobal": true,
+            "allowRoom": true
+        },
+        "webhook": [
+          {
+            "url": "",
+            "pattern": "^/[dD][zZ][bB][oO][tT]",
+            "event": "room_message",
+            "name": "DZbot"
+          }
+        ]
+    }
+}
