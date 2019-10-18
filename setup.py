@@ -6,7 +6,7 @@ requires = [
     'chardet==3.0.4',
     'click==6.7',
     'flake8==3.5.0',
-    'Flask==0.12.3',
+    'Flask==1.0',
     'gnureadline==6.3.8',
     'idna==2.6',
     'IPy==0.83',
