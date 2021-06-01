@@ -16,7 +16,7 @@ requires = [
     'pytest==3.3.2',
     'pytest-runner==3.0',
     'requests==2.18.4',
-    'urllib3==1.22',
+    'urllib3==1.26.5',
     'WebOb==1.7.4',
     'Werkzeug==0.12',
     'zappa==0.45.1'
