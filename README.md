@@ -23,7 +23,7 @@ optional arguments:
   -h, --help            show this help message and exit
 
 
-list each escalation policy, user, oncall, service, or schedule names
+list each escalation policy (i.e. eps), user, oncall, service, or schedule names
 command: /dzbot list --entity eps/users/oncalls/services/schedules
 return:
 ['Amp',
@@ -84,7 +84,7 @@ return:
 ## Zappa 
 DZbot uses the open source project ****Zappa**** to automate AWS Lambda deployments and updates.
  
-`https://github.com/Miserlou/Zappa/blob/master/README.md`
+`https://github.com/zappa/Zappa`
 
 Run this zappa command in terminal after your code changes/extensions:
 
@@ -178,9 +178,9 @@ You can find logs for dzbot in the `/aws/lambda/dzbot-production` Log Group in A
 
 
 ## Monitoring
-To extend DZbot's monitoring capabilities, follow these instructions:
+To schedule monitoring functions that occur on regular intervals, follow these instructions:
 
-`https://github.com/Miserlou/Zappa#scheduling`
+`https://github.com/zappa/Zappa?tab=readme-ov-file#scheduling`
 
 General Guideline
 1. Create a new monitoring function to be periodically called in `src/dzbot/app.py`
