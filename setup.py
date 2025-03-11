@@ -18,7 +18,7 @@ requires = [
     'requests==2.18.4',
     'urllib3==1.22',
     'WebOb==1.7.4',
-    'Werkzeug==0.12',
+    'Werkzeug==0.15.3',
     'zappa==0.45.1'
 ]
 
